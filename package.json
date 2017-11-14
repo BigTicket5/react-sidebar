@@ -1,5 +1,5 @@
 {
-  "name": "myreacttest",
+  "name": "react-sidebar",
   "description": "just for some test",
   "version": "0.0.562",
   "dependencies": {
@@ -16,5 +16,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "SideBar.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigTicket5/react-sidebar.git"
+  },
+  "author": "kevinmaozz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BigTicket5/react-sidebar/issues"
+  },
+  "homepage": "https://github.com/BigTicket5/react-sidebar#readme"
 }
