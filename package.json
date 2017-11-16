@@ -1,12 +1,12 @@
 {
   "name": "react-sidebar-mzz",
   "description": "mzz's sidebar using in React",
-  "version": "0.0.73",
+  "version": "0.0.57",
   "dependencies": {
-    "react-router-dom": "4.2.2",
-    "react-dom": "16.0.0",
+    "react": "16.0.0",
     "react-addons-css-transition-group": "15.6.2",
-    "react": "16.0.0"
+    "react-dom": "16.0.0",
+    "react-router-dom": "4.2.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "build": "babel src --out-dir build && webpack --colors --progress -p"
+    "build": "babel src --out-dir build"
   },
   "main": "build/index.js",
   "repository": {
