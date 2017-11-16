@@ -1,7 +1,7 @@
 {
-  "name": "react-sidebar",
-  "description": "just for some test",
-  "version": "0.0.562",
+  "name": "react-sidebar-mzz",
+  "description": "mzz's sidebar using in React",
+  "version": "0.0.73",
   "dependencies": {
     "react-router-dom": "4.2.2",
     "react-dom": "16.0.0",
@@ -9,15 +9,21 @@
     "react": "16.0.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.0"
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.19.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "babel src --out-dir build && webpack --colors --progress -p"
   },
-  "main": "SideBar.js",
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BigTicket5/react-sidebar.git"

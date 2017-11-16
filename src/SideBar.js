@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-import sidebar from "./css/sidebar.css";
+import sidebar from "../css/sidebar.css";
 
 class SideBar extends React.Component {
   constructor(props) {
@@ -9,11 +9,11 @@ class SideBar extends React.Component {
       clickeddiv: ""
     };
   }
-  handleClick = e => {
+  handleClick (e) {
     const prediv = this.state.clickeddiv;
     if (prediv !== "")
       prediv.style.backgroundColor = this.props.styleProps.bgcolor;
-    e.target.style.backgroundColor = this.props.styleProps.clickedcolor;
+      e.target.style.backgroundColor = this.props.styleProps.clickedcolor;
     this.setState({
       clickeddiv: e.target
     });
